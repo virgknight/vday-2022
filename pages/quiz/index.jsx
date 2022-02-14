@@ -25,7 +25,7 @@ class Quiz extends React.Component {
     handleSubmit (e) {
         e.preventDefault();
         if (this.state.inputString !== "Virginia") {
-            this.setState({errorMsg: "Oopsie! That answer is not correct. Try entering \"Virginia\" or \"Zak\"!"});
+            this.setState({errorMsg: "Oopsie! That answer is not correct. Try entering Virginia or Zak!"});
         } else {
             this.setState({correct: true});
             this.interval = setInterval(() => this.props.router.push("/"), 10000);

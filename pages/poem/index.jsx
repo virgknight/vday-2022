@@ -15,7 +15,7 @@ const Poem = () => {
 
                 <p className="poem">
                     Oh Zak, dear Zak<br/>
-                    You're such a snack<br/>
+                    You&apos;re such a snack<br/>
                     Your heart is as huge<br/>
                     As your muscular back<br/><br/>
 
