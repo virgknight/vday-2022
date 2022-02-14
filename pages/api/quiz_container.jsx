@@ -54,12 +54,12 @@ class QuizContainer extends React.Component {
             <div className="modal-background">
                 <div className="quiz-modal landing-modal">
                     {candyHeart}
-                    <h2>Happy Valentine's Day, my love!</h2>
+                    <h2>Happy Valentine&apos;s Day, my love!</h2>
                     <div className="bully-image"><Image src={bully} alt="mattis lookalike"/></div>
                     <section className="sappy-text">
                         <p>You are so many things to me: a best friend, confidante, travel buddy, workout partner, and #fitnessgoals.</p> 
-                        <p>Even though we can't be together today, I wanted to put together a little web app to celebrate the occasion.</p>
-                        <p>Feel free to click around the buttons below, and don't ever forget: I LOVE YOU!</p>
+                        <p>Even though we can&apos;t be together today, I wanted to put together a little web app to celebrate the occasion.</p>
+                        <p>Feel free to click around the buttons below, and don&apos;t ever forget: I LOVE YOU!</p>
                     </section>
 
                     <h3>What would you like to do?</h3>
