@@ -1,16 +1,62 @@
-html,
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  /* background-color: #FC89AC;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23FC89AC' width='11' height='11'/%3E%3Crect fill='%23fc8aad' x='10' width='11' height='11'/%3E%3Crect fill='%23fc8bae' y='10' width='11' height='11'/%3E%3Crect fill='%23fc8caf' x='20' width='11' height='11'/%3E%3Crect fill='%23fc8daf' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23fc8db0' y='20' width='11' height='11'/%3E%3Crect fill='%23fd8eb1' x='30' width='11' height='11'/%3E%3Crect fill='%23fd8fb2' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23fd90b3' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23fd91b4' y='30' width='11' height='11'/%3E%3Crect fill='%23fd92b4' x='40' width='11' height='11'/%3E%3Crect fill='%23fd93b5' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23fd94b6' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23fd95b7' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23fd95b8' y='40' width='11' height='11'/%3E%3Crect fill='%23fd96b9' x='50' width='11' height='11'/%3E%3Crect fill='%23fd97b9' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23fd98ba' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23fd99bb' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23fd9abc' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23fd9bbd' y='50' width='11' height='11'/%3E%3Crect fill='%23fe9cbd' x='60' width='11' height='11'/%3E%3Crect fill='%23fe9cbe' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23fe9dbf' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23fe9ec0' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23fe9fc0' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23fea0c1' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23fea1c2' x='70' width='11' height='11'/%3E%3Crect fill='%23fea2c3' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23fea2c4' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23fea3c4' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23fea4c5' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23fea5c6' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23fea6c7' x='80' width='11' height='11'/%3E%3Crect fill='%23fea7c7' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23fea8c8' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23fea9c9' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23fea9ca' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23feaaca' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23feabcb' x='90' width='11' height='11'/%3E%3Crect fill='%23feaccc' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23feadcd' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23feaecd' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23feaece' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23ffafcf' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23ffb0cf' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23ffb1d0' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23ffb2d1' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23ffb3d2' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23ffb4d2' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23ffb4d3' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23ffb5d4' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23ffb6d4' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23ffb7d5' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23ffb8d6' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23ffb9d6' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23ffb9d7' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23ffbad8' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23ffbbd8' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23FFBCD9' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; */
+  background-color: #ffbbd8;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23fc8aac' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M41 37.59V25h-2v12.59l-8.9-8.9-1.41 1.41 8.9 8.9H25v2h12.59l-8.9 8.9 1.41 1.41 8.9-8.9V55h2V42.41l8.9 8.9 1.41-1.41-8.9-8.9H55v-2H42.41l8.9-8.9-1.41-1.41-8.9 8.9zM1 1h2v2H1V1zm0 4h2v2H1V5zm0 4h2v2H1V9zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zM5 1h2v2H5V1zm4 0h2v2H9V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm0 4h2v2h-2V5zm0 4h2v2h-2V9zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zM5 5h70v70H5V5zm2 68h66V7H7v66zM9 9h62v62H9V9zm2 60h58V11H11v58zm2-39.6V13h16.4A29.1 29.1 0 0 0 13 29.4zM15 15v6.67A31.17 31.17 0 0 1 21.67 15H15zm-2 52V50.6A29.1 29.1 0 0 0 29.4 67H13zm2-8.67V65h6.67A31.17 31.17 0 0 1 15 58.33zM67 67H50.6A29.1 29.1 0 0 0 67 50.6V67zm-8.67-2H65v-6.67A31.17 31.17 0 0 1 58.33 65zM67 13v16.4A29.1 29.1 0 0 0 50.6 13H67zm-2 8.67V15h-6.67A31.17 31.17 0 0 1 65 21.67zM39 13h2v2h-2v-2zm7.02.66l1.93.52-.51 1.93-1.94-.52.52-1.93zm6.61 2.46l1.74 1-1 1.73-1.74-1 1-1.73zm5.75 4.08l1.42 1.42-1.42 1.4-1.4-1.4 1.4-1.42zm4.5 5.43l1 1.74-1.73 1-1-1.74 1.73-1zm2.94 6.42l.52 1.93-1.93.52-.52-1.94 1.93-.51zM67 39v2h-2v-2h2zm-.66 7.02l-.52 1.93-1.93-.51.52-1.94 1.93.52zm-2.46 6.61l-1 1.74-1.73-1 1-1.74 1.73 1zm-4.08 5.75l-1.42 1.42-1.4-1.42 1.4-1.4 1.42 1.4zm-5.43 4.5l-1.74 1-1-1.73 1.74-1 1 1.73zM41 67h-2v-2h2v2zm6.95-1.18l-1.93.52-.52-1.93 1.94-.52.51 1.93zm-13.97.52l-1.93-.52.51-1.93 1.94.52-.52 1.93zm-6.61-2.46l-1.74-1 1-1.73 1.74 1-1 1.73zm-5.75-4.08l-1.42-1.42 1.42-1.4 1.4 1.4-1.4 1.42zm-4.5-5.43l-1-1.74 1.73-1 1 1.74-1.73 1zm-2.94-6.42l-.52-1.93 1.93-.52.52 1.94-1.93.51zM13 41v-2h2v2h-2zm.66-7.02l.52-1.93 1.93.51-.52 1.94-1.93-.52zm2.46-6.61l1-1.74 1.73 1-1 1.74-1.73-1zm4.08-5.75l1.42-1.42 1.4 1.42-1.4 1.4-1.42-1.4zm5.43-4.5l1.74-1 1 1.73-1.74 1-1-1.73zm6.42-2.94l1.93-.52.52 1.93-1.94.52-.51-1.93zM40 63a23 23 0 1 1 0-46 23 23 0 0 1 0 46zm0-2a21 21 0 1 0 0-42 21 21 0 0 0 0 42zm0-2a19 19 0 1 1 0-38 19 19 0 0 1 0 38zm0-2a17 17 0 1 0 0-34 17 17 0 0 0 0 34z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 a {
-  color: inherit;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+  color: #000;
 }

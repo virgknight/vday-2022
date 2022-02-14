@@ -1,0 +1,369 @@
+.modal-background {
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-modal {
+  z-index: 1;
+  position: relative;
+  border-radius: 32px;
+  min-height: initial;
+  width: 75vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.685);
+  border: 5px double goldenrod;
+}
+
+.landing-modal {
+    min-height: 75vh;
+    animation: bounceInDown 700ms;
+}
+
+@keyframes bounceInDown {
+   0% {
+      opacity: 0;
+      transform: translateY(-2000px);
+   }
+   60% {
+      opacity: 1;
+      transform: translateY(30px);
+   }
+   80% {
+      transform: translateY(-10px);
+   }
+   100% {
+      transform: translateY(0);
+   }
+} 
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  margin: 0.75rem;
+}
+
+h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+}
+
+.title-container {
+  height: 44px;
+  overflow: hidden;
+  margin: 0.75rem;
+}
+
+.scroll-up {
+    font-size: 44px;
+    margin: 0;
+    animation: slide-up 1s;
+    -webkit-animation: slide-up 1s;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.bully-image {
+  object-fit: cover;
+  width: 33%;
+
+  img {
+    box-shadow: inset 0 0 8px 8px white;
+  }
+}
+
+.options-container {
+  width: 80%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+div.back-arrow {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
+}
+
+.candy-heart-button {
+  background: none;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+a, .candy-heart-button {
+  background-color: #ffbdde;
+  font-size: 1.5em;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid ;
+  font-family: 'Baloo 2', cursive;
+  transition: 150ms ease-in-out;
+}
+
+a:hover, .candy-heart-button:hover {
+  color: white;
+  background-color: #b19cd9;
+  border-color: white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.heart-background {
+  position: fixed;
+  z-index: 19;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#candy-heart {
+  position: absolute;
+  z-index: 20;
+}
+
+// Quiz page
+.error {
+    color: red;
+    text-shadow: 0 0 1px lightcoral;
+}
+
+.correct-text {
+    color: mediumseagreen;
+    font-weight: 700;
+}
+
+p {
+  font-size: 1.2em;
+  font-family: Didot;
+  margin-bottom: 0.8em;
+}
+
+h6, input {
+    font-size: 1.5em;
+    font-family: 'Baloo 2', cursive;
+}
+
+.quiz-desc {
+    width: 60%;
+    margin: 1.5em;
+}
+
+input {
+    box-sizing: border-box;
+    margin: 1rem;
+    background-color: transparent;
+    border-width:0px;
+    border: 1px solid gray;
+    border-radius: 1.25em;
+    padding: 0.5em;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #ff94c9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        appearance: none;
+        background-image: radial-gradient(100% 100% at 100% 0, #ffbdde 0, #ff94c9 100%);
+        border: 0;
+        border-radius: 2rem;
+        box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: 'Chicle', cursive;
+        font-size: 1.5rem;
+        line-height: 1;
+        list-style: none;
+        letter-spacing: 0.1rem;
+        overflow: hidden;
+        padding: 1rem 2rem;
+        transition: box-shadow .15s,transform .15s;
+        user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow,transform;
+    }
+
+    button:focus {
+        box-shadow: #ff1a8c 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #ff1a8c 0 -3px 0 inset;
+    }
+
+    button:hover {
+        box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #ff1a8c 0 -3px 0 inset;
+        transform: translateY(-2px);
+    }
+
+    button:active {
+        box-shadow: #ff1a8c 0 3px 7px inset;
+        transform: translateY(2px);
+    }
+}
+
+
+
+.shine {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 80%;
+    background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #ff1a8c)) 0 0 no-repeat;
+    background-size: 100%;
+    color: rgba(255, 255, 255, 0.3);
+    animation: shine 6s infinite;
+    background-clip: text;
+    background-size: 80%;
+    -webkit-background-clip: text;
+}
+
+@keyframes shine {
+	0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+// Floating hearts
+.hearts {
+  width: 8%;
+  min-width: 100px;
+  height: 25%;
+  min-height: 300px;
+  position: absolute;
+  z-index: 10;
+}
+
+.heart {
+  position: absolute;
+  height: 20%;
+  min-height: 15px;
+  width: 20%;
+  min-width: 15px;
+  opacity: 0;
+  animation: floating-heart 8s cubic-bezier(0.5, 0.5, 0.5, 0.5);
+}
+
+.heart:nth-child(1) {  
+  animation-delay: 0.75s;
+}
+
+.heart:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.heart:nth-child(3) {
+  animation-delay: 3.5s;
+}
+
+.heart:nth-child(4) {
+  animation-delay: 4.5s;
+}
+
+@keyframes floating-heart {
+  0% {
+    opacity: 0;
+    bottom: 0%;
+    left: 0%;
+  }
+  10% {
+    opacity: 1;
+    bottom: 20%;
+    left: 70%;
+  }
+  20% {
+    bottom: 40%;
+    left: 10%;
+  }
+  30% {
+    bottom: 60%;
+    left: 50%;
+  }
+  40% {
+    opacity: 1;
+    bottom: 80%;
+    left: 5%;
+  }
+  48% {
+    opacity: 0;
+    bottom: 100%;
+    left: 60%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 100%;
+    left: 90%;
+  }
+}
+
+// Poem
+.poem-modal {
+  width: 50vw;
+}
+
+.poem {
+  text-align: left;
+  margin-top: 1rem;
+  font-size: 1.5em;
+  font-family:'Times New Roman', Times, serif;
+  line-height: 2rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  color: grey;
+}
+
+.indent1 {
+  display: block;
+  text-indent: 15%;
+}
+.indent2 {
+  display: block;
+  text-indent: 30%;
+}
